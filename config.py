@@ -6,6 +6,8 @@
 class Config(object):
     DEBUG = False
     TESTING = False
+    CACHE_TYPE = "RedisCache"
+    CACHE_DEFAULT_TIMEOUT = 300
     # SQLALCHEMY_DATABASE_URI = 'sqlite:///../databases/development.db'
     # SECRET_KEY = "thisissecter"
     # SECURITY_PASSWORD_SALT = "thisissaltt"
@@ -33,6 +35,11 @@ class DevelopmentConfig(Config):
     SMTP_PORT = 1025
     SENDER_EMAIL = "21f1005024@ds.study.iitm.ac.in"
     SENDER_PASSWORD = ""
+    CACHE_REDIS_HOST ="localhost"
+    CACHE_REDIS_PORT =6379
+    CACHE_REDIS_DB =3
+    
+    
 
 
 # class TestingConfig(Config):
