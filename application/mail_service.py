@@ -10,7 +10,7 @@ RECEIVER_EMAIL = 'davana2766@maxturns.com'
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 SMTP_USERNAME = 'rmtaditya07@gmail.com'
-SMTP_PASSWORD = 'fbtdewkmcgqaaftw'
+SMTP_PASSWORD = ''
 
 def send_message(to, subject, content_body):
     msg = MIMEMultipart()
